@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MAAZ PORTFOLIO</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fading {
+            animation: fadeIn 1s ease-out;
+        }
+
+        body {
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 250px;
+            padding: 50px 20px;
+            margin-top: 130px;
+        }
+
+        .section {
+            width: 50%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px;
+            border-radius: 20px;
+            background: rgba(53, 53, 53, 0.2);
+            backdrop-filter: blur(5px);
+            gap: 20px;
+            transition: transform 0.5s ease, box-shadow 0.7s ease-in;
+        }
+
+        .section img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social a i,
+        .social1 a i {
+            color: rgb(53, 53, 53, 0.2);
+            /* Default color */
+            transition: transform 0.5s ease, color 1s ease;
+            /* Smooth color and transform */
+        }
+
+        .social a i:hover,
+        .social1 a i:hover {
+            transform: scale(1.5);
+            /* Scale the icon */
+            color: rgb(255, 115, 0);
+            /* Hover color */
+        }
+
+        .bio-content,
+        .projects-content {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        .text{
+            color: rgb(0, 0, 0);
+        }
+        .text:hover {
+            transform: scale(1) translateY(15px);
+        }
+
+        .right a p:hover {
+            transition: scale(1) translateY(-5px);
+            color: rgb(83, 83, 83);
+        }
+
+        .text,
+        .right a p {
+            transition: transform 0.7s ease-in-out, color 0.7s ease;
+        }
+
+        .project-image a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .project-image a:hover {
+            color: rgb(255, 115, 0);
+        }
+
+        .project-image p {
+            transition: color 0.7s ease-in-out;
+        }
+
+        .project-image p:hover {
+            color: rgb(255, 115, 0);
+        }
+
+        .section:hover,
+        .social-section:hover {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-section {
+            transition: box-shadow 1s ease-in;
+        }
+
+       
+    </style>
+</head>
+
+<body class="fading">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="section">
+            <div class="left">
+                <p style="width: max-content; font-size:40px;margin: 0;padding: 0; color: rgb(0, 0, 0);">Maaz</p>
+                <p style="width: max-content; font-size:40px;margin: 0;padding-bottom: 10px; color: rgb(0, 0, 0);">Waseem</p>
+                <p style="width: max-content; font-size:40px;margin: 0;padding-bottom: 10px; color: rgb(0, 0, 0);">Khan</p>
+                <p style="font-size:20px;padding-bottom: 20px;font-weight: normal; text-transform: uppercase; color: rgb(0, 0, 0);">FREELANCER, AI Engineer</p>
+                <div class="social"
+                    style="padding-top: 20px; display: flex;justify-content:space-between; width: 200px;">
+                    <a href="#" target="_blank"><i style="color: rgb(255, 255, 255);"
+                            class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank"><i style="color: rgb(255, 255, 255);"
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i
+                            style="color: rgb(255, 255, 255);" class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="right" style="font-size:20px;">
+                <a href="#BIO" style="text-decoration: none; color: inherit;">
+                    <p class="text">BIO</p>
+                    <p style="border-bottom:2px solid rgb(255,255,255);"></p>
+                </a>
+                <a href="#PROJECTS" style="text-decoration: none; color: inherit;">
+                    <p class="text">PROJECTS</p>
+                    <p style="border-bottom:2px solid rgb(255,255,255);"></p>
+                </a>
+                <a href="mailto:maazwaseem12345@gmail.com" style="text-decoration: none; color: inherit;">
+                    <p class="text">CONTACT</p>
+                    <p style="border-bottom:2px solid rgb(255,255,255);"></p>
+                </a>
+                <a href="#LINKS" style="text-decoration: none; color: inherit;">
+                    <p class="text">LINKS</p>
+                    <p style="border-bottom:2px solid rgb(255,255,255);"></p>
+                </a>
+
+            </div>
+        </div>
+        <!-- Bio Section -->
+        <div class="section" id="BIO" style="display: flex;">
+            <div class="bio-img" style="flex: 1;">
+                <img src="\animation\PBL\pictures\WhatsApp Image 2024-12-19 at 13.08.12_8b657216.jpg" alt="AI Engineer" style="width: 300px; height: 300px; border-radius: 50%;
+                 box-shadow: 0px 0px 50px 0px; object-fit: cover;">
+            </div>
+            <div class="bio-content" style="flex: 2;">
+
+                <p style="font-size:30px;"><strong>Maaz Waseem Khan</strong></p>
+                <p><strong style="text-transform: uppercase;">AI Engineer</strong></p>
+                <p style="line-height: 1.8;font-weight: normal;">I am Maaz Waseem Khan, a Computer Science student
+                    and I am doing Artificial Intelligence. I am honing my skills by working on self-initiated
+                    projects.I can Integrate AI in apps and Websites.</p>
+            </div>
+        </div>
+        <!-- Projects Section -->
+        <div style="   display: flex;
+         flex-direction:row;
+         align-items: center;
+         gap:50px;
+         padding: 50px 20px;
+         margin-top:-20px;">
+            <div class="section" id="PROJECTS" style="display: flex;flex-direction: column;">
+                <div class="project-img" style="flex: 1;">
+                    <img src="/animation/PBL/pictures/WhatsApp Image 2024-12-19 at 13.08.12_386814f4.jpg" alt="Project 2" style="width: 260px; height: 260px;
+                    box-shadow: 0px 0px 50px 0px; border-radius: 10px; object-fit: cover;">
+                </div>
+                <div class="projects-content" style=" flex:2;">
+                    <div class="project-image"><a
+                            href=""
+                            target="_blank">
+                            <p style="text-align: center; font-size:30px;"><strong>PROJECT 1</strong></p>
+                        </a>
+                    </div>
+                    <p style="line-height: 1.5;font-weight: normal;">This is an AI Software which features AI in healping Teachers....</p>
+                </div>
+
+            </div>
+            <div class="section" id="PROJECTS" style="display: flex;flex-direction: column;">
+                <div class="project-img" style="flex: 1;">
+                    <img src="/animation/PBL/pictures/WhatsApp Image 2024-12-19 at 13.08.13_599dd085.jpg" alt="Project 2" style="width: 260px; height: 260px;
+                    box-shadow: 0px 0px 50px 0px; border-radius: 10px; object-fit: cover;">
+                </div>
+                <div class="projects-content" style=" flex:2;">
+                    <div class="project-image"><a
+                            href=""
+                            target="_blank">
+                            <p style="text-align: center; font-size:30px;"><strong>PROJECT 2</strong></p>
+                        </a>
+                    </div>
+                    <p style="line-height: 1.5;font-weight: normal;">This project is an AI Face Recognition System
+                        made for Effective Database...</p>
+                </div>
+
+            </div>
+            <div class="section" id="PROJECTS" style="display: flex;flex-direction: column;">
+                <div class="project-img" style="flex: 1;">
+                    <img src="\animation\PBL\pictures\WhatsApp Image 2024-12-19 at 13.08.14_364349c7.jpg" alt="Project 3" style="width: 260px; height: 260px;
+                    box-shadow: 0px 0px 50px 0px; border-radius: 10px; object-fit: cover;">
+                </div>
+                <div class="projects-content" style=" flex:2;">
+                    <div class="project-image"><a
+                            href=""
+                            target="_blank">
+                            <p style="text-align: center; font-size:30px;"><strong>PROJECT 3</strong></p>
+                        </a>
+                    </div>
+                    <p style="line-height: 1.5;font-weight: normal;">This project is a discord bot which is an AI as an assistant and it can do....</p>
+                </div>
+            </div>
+        </div>
+        <div class="social-section" style="text-align: center; background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);width: 500px; padding:35px 60px;   border-radius: 20px; ">
+            <div class="footer" id="LINKS" style=" display: flex;
+        justify-content: space-between;
+        align-items: center;">
+                <div class="social1"
+                    style="font-size: larger; padding-top: 20px; display: flex;justify-content:space-between; width:500px;">
+                    <a href="" target="_blank"><i
+                            class="fab fa-free-code-camp" style="color: rgb(255,255,255);"></i></a>
+                    <a href="#" target="_blank"><i style="color: rgb(255,255,255);"
+                            class="fas fa-envelope"></i></a>
+                    <a href="#" target="_blank"><i style="color: rgb(255,255,255);"
+                            class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i
+                            style="color: rgb(255, 255, 255);" class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div style="font-size:large; margin-top:60px; color: white;">
+                &copy; 2024 This is Maaz. All Rights Reserved.
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

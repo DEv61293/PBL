@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IMDADULLAH PORTFOLIO</title>
+    <style>
+       
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fading {
+            animation: fadeIn 1s ease-out;
+        }
+
+        body {
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://images.unsplash.com/photo-1614624532983-4ce03382d63d?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 250px;
+            padding: 50px 20px;
+            margin-top: 130px;
+        }
+
+        .section {
+            width: 50%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            gap: 20px;
+            transition: transform 0.5s ease, box-shadow 0.7s ease-in;
+        }
+
+        .section img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social a i,
+        .social1 a i {
+            color: rgb(0, 0, 0);
+            /* Default color */
+            transition: transform 0.5s ease, color 1s ease;
+            /* Smooth color and transform */
+        }
+
+        .social a i:hover,
+        .social1 a i:hover {
+            transform: scale(1.5);
+            /* Scale the icon */
+            color: rgb(119, 57, 6);
+            /* Hover color */
+        }
+
+        .bio-content,
+        .projects-content {
+            font-size: 20px;
+            color: black;
+        }
+
+
+        .text:hover {
+            transform: scale(1) translateY(15px);
+        }
+
+        .right a p:hover {
+            transition: scale(1) translateY(-5px);
+            color: rgb(119, 57, 6);
+        }
+
+        .text,
+        .right a p {
+            transition: transform 0.7s ease-in-out, color 0.7s ease;
+        }
+
+        .project-image a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .project-image a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .project-image p {
+            transition: color 0.7s ease-in-out;
+        }
+
+        .project-image p:hover {
+            color: rgb(119, 57, 6);
+        }
+
+        .section:hover,
+        .social-section:hover {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-section {
+            transition: box-shadow 1s ease-in;
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 0.75;
+            }
+
+            75% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .section:hover .projects-content a p {
+            animation: slideInFromRight 4s ease-in-out infinite;
+        }
+        .section:hover .projects-content p {
+            animation: slideInFromRight 4s ease-in-out infinite;
+        }
+
+        .section:hover .project-img img {
+            animation: slideInFromRight 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="fading">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="section">
+            <div class="left">
+                <p style="width: max-content; font-size:40px;margin: 0;padding: 0;">MUHAMMAD</p>
+                <p style="width: max-content; font-size:40px;margin: 0;padding-bottom: 10px;">IMDADULLAH</p>
+                <p style="font-size:20px;padding-bottom: 20px;font-weight: normal;">FREELANCER, WEB DEVELOPER</p>
+                <div class="social"
+                    style="padding-top: 20px; display: flex;justify-content:space-between; width: 200px;">
+                    <a href="mailto:imdadullahchishti@gmail.com" target="_blank"><i style="color: rgb(0, 0, 0);"
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/imdadullah__7/" target="_blank"><i style="color: rgb(0, 0, 0);"
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/imdadullah-chishti-888340326/" target="_blank"><i
+                            style="color: rgb(0, 0, 0);" class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="right" style="font-size:20px;">
+                <a href="#BIO" style="text-decoration: none; color: inherit;">
+                    <p class="text">BIO</p>
+                    <p style="border-bottom:2px solid rgb(0, 0, 0);"></p>
+                </a>
+                <a href="#PROJECTS" style="text-decoration: none; color: inherit;">
+                    <p class="text">PROJECTS</p>
+                    <p style="border-bottom:2px solid rgb(0, 0, 0);"></p>
+                </a>
+                <a href="mailto:imdadullahchishti@gmail.com" style="text-decoration: none; color: inherit;">
+                    <p class="text">CONTACT</p>
+                    <p style="border-bottom:2px solid rgb(0, 0, 0);"></p>
+                </a>
+                <a href="#LINKS" style="text-decoration: none; color: inherit;">
+                    <p class="text">LINKS</p>
+                    <p style="border-bottom:2px solid rgb(0, 0, 0);"></p>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="section" id="BIO" style="display: flex;">
+            <div class="bio-img" style="flex: 1;">
+                <img src="/animation/PBL/pictures/7808b5bd-bdbc-447a-ad6c-0a060d0846ca.webp" alt="">
+            </div>
+            <div class="bio-content" style="flex: 2;">
+                <p style="font-size:30px;"><strong>Muhammad Imdadullah</strong></p>
+                <p><strong>FRONT END WEB DEVELOPER</strong></p>
+                <p style="line-height: 1.8;font-weight: normal;">I am Muhammad Imdadullah, a Computer Science student
+                    currently learning front-end web development. I am honing my skills by working on self-initiated
+                    projects.</p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div style="   display: flex;
+         flex-direction:row;
+         align-items: center;
+         gap:50px;
+         padding: 50px 20px;
+         margin-top:-20px;">
+            <div class="section" id="PROJECTS" style="display: flex;flex-direction: column;">
+                <div class="project-img" style="flex: 1;">
+                    <img src="https://plus.unsplash.com/premium_photo-1661290256778-3b821d52c514?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdCUyMHBsYW5uaW5nfGVufDB8fDB8fHww"
+                        alt="">
+                </div>
+                <div class="projects-content" style=" flex:2;">
+                    <div class="project-image"><a
+                            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page"
+                            target="_blank">
+                            <p style="text-align: center; font-size:30px;"><strong>PROJECT 1</strong></p>
+                        </a>
+                    </div>
+
+                    <p style="line-height: 1.5;font-weight: normal;">This project is a tribute
+                        webpage
+                        dedicated to J. Robert Oppenheimer.It
+                        features ...</p>
+                </div>
+            </div>
+            <div class="section" id="PROJECTS" style="display: flex;flex-direction: column;">
+                <div class="project-img" style="flex: 1;">
+                    <img src="https://img.freepik.com/free-photo/business-corporate-people-working-concept_53876-31465.jpg"
+                        alt="">
+                </div>
+                <div class="projects-content" style=" flex:2;">
+                    <div class="project-image"><a
+                            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form"
+                            target="_blank">
+                            <p style="text-align: center; font-size:30px;"><strong>PROJECT 2</strong></p>
+                        </a>
+                    </div>
+                    <p style="line-height: 1.5;font-weight: normal;">This project is a survey form
+                        designed
+                        for collecting feedback from users ....</p>
+                </div>
+
+            </div>
+            <div class="section" id="PROJECTS" style="display: flex;flex-direction: column;">
+                <div class="project-img" style="flex: 1;">
+                    <img src="https://www.sydle.com/blog/assets/post/projects-and-processes-what-is-the-difference-614e00a1a9d8415db45a9230/project-and-process.jpg"
+                        alt="">
+                </div>
+                <div class="projects-content" style=" flex:2;">
+                    <div class="project-image"><a
+                            href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page"
+                            target="_blank">
+                            <p style="text-align: center; font-size:30px;"><strong>PROJECT 3</strong></p>
+                        </a>
+                    </div>
+                    <p style="line-height: 1.5;font-weight: normal;">This project is a product
+                        landing
+                        page
+                        designed to highlight ....</p>
+                </div>
+            </div>
+        </div>
+        <div class="social-section" style="text-align: center; background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);width: 500px; padding:35px 60px;   border-radius: 20px; ">
+            <div class="footer" id="LINKS" style=" display: flex;
+        justify-content: space-between;
+        align-items: center;">
+                <div class="social1"
+                    style="font-size: larger; padding-top: 20px; display: flex;justify-content:space-between; width:500px;">
+                    <a href="https://www.freecodecamp.org/fcc5d50b6bd-17bb-4a00-8920-645ad9b5bc11" target="_blank"><i
+                            class="fab fa-free-code-camp" style="color: rgb(0, 0, 0);"></i></a>
+                    <a href="mailto:imdadullahchishti@gmail.com" target="_blank"><i style="color: rgb(0, 0, 0);"
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/imdadullah__7/" target="_blank"><i style="color: rgb(0, 0, 0);"
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/imdadullah-chishti-888340326/" target="_blank"><i
+                            style="color: rgb(0, 0, 0);" class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div style="font-size:large; margin-top:60px;">
+                &copy; 2024 Imdadullah. All Rights Reserved
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

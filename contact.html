@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TEAM PORTFOLIO</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fading {
+            animation: fadeIn 1s ease-out;
+        }
+
+        body {
+            font-weight: bold;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://images.unsplash.com/photo-1579389083123-53a622ebaec2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-size: 28px;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 250px;
+            padding: 50px 20px;
+            margin-top: 130px;
+        }
+
+        .section {
+            width: 50%;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 70px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            gap: 20px;
+            transition: transform 0.5s ease, box-shadow 0.7s ease-in;
+        }
+
+        .section img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social a i,
+        .social1 a i {
+            color: rgb(0, 0, 0);
+            transition: transform 0.5s ease, color 1s ease;
+
+        }
+
+        .social a i:hover,
+        .social1 a i:hover {
+            transform: scale(1.5);
+            color: rgb(119, 57, 6);
+        }
+
+        .bio-content,
+        .projects-content {
+            font-size: 20px;
+            color: black;
+        }
+
+
+        .text:hover {
+            transform: scale(1) translateY(15px);
+        }
+
+        .right a p:hover {
+            transition: scale(1) translateY(-5px);
+            color: rgb(119, 57, 6);
+        }
+
+        .text,
+        .right a p {
+            transition: transform 0.7s ease-in-out, color 0.7s ease;
+        }
+
+      
+
+        .project-image a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .project-image a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .project-image p {
+            transition: color 0.7s ease-in-out;
+        }
+
+        .project-image p:hover {
+            color: rgb(119, 57, 6);
+        }
+
+        .section:hover,
+        .social-section:hover {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-section {
+            transition: box-shadow 1s ease-in;
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 0.75;
+            }
+
+            75% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        .section:hover .bio-content p {
+            animation: slideInFromRight 4s ease-in-out infinite;
+        }
+
+        .section:hover .bio-img img {
+            animation: slideInFromRight 4s ease-in-out infinite;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        form{
+            padding: 30px 100px;
+        }
+        header input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+header input:focus {
+    border-color: #1196b8;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #1196b8;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #0c7a8a;
+}
+    </style>
+</head>
+<body class="fading">
+    <div class="container">
+        <header  style="background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px); width: 100%;padding-bottom: 20px; justify-content: space-between; position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;">
+            <div style="display: flex;font-size: medium;margin-top: 20px;">
+                <section style="padding-left: 150px;margin-top:25px;padding-right: 300px;">LOGO</section>
+                <div style=" display: flex;width:1700px;justify-content: space-between;padding:0 50px;">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <p class="text">HOME</p>
+                       
+                    </a>
+                    <a href="about.html" style="text-decoration: none; color: inherit;">
+                        <p class="text">ABOUT US</p>
+                       
+                    </a>
+                    <a href="contact.html" style="text-decoration: none; color: inherit;">
+                        <p class="text">CONTACT US</p>
+                        
+                    </a>
+                    <a href="#LINKS" style="text-decoration: none; color: inherit;">
+                        <p class="text">LINKS</p>
+                    
+                    </a>
+            
+                </div>
+                <section style="display: flex;padding-left: 230px;padding-right: 100px;">
+                    <input style="height: max-content;"  type="text" placeholder="Search...">
+                    <button style="height: max-content;">Search</button>
+                </section>
+            </div>
+        </header>
+       
+
+        <div class="social-section" style="text-align: center; background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);width:max-content; padding:35px 60px;   border-radius: 20px; ">
+            <section style="max-width: 400px; margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+                <h2 style="text-align: center;">SIGN UP HERE</h2>
+                <form action="#" method="#" style="display: flex; flex-direction: column; gap: 15px;">
+                    <label for="name">NAME</label>
+                    <input id="name" type="text" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+                    <label for="email">EMAIL</label>
+                    <input id="email" type="email" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+                    <label for="password">PASSWORD</label>
+                    <input id="password" type="password" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+                    <label for="dob">DOB</label>
+                    <input type="date" name="dob" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+            
+                    <label for="country">COUNTRY</label>
+                    <select name="country" id="country" required style="padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="" disabled selected>Select a COUNTRY</option>
+                        <option value="IRAN">IRAN</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="CANADA">CANADA</option>
+                    </select>
+            
+                    <label>GENDER</label>
+                    <div style="display: flex; gap: 10px;">
+                        <div style="display: flex;">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div style="display: flex;">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                       
+                    </div>
+                    <button class="button" type="submit" style="padding: 10px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer;">SUBMIT</button>       
+                </form>
+            </section>
+            
+     
+        </div>
+
+      
+        <div class="social-section" style="text-align: center; background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);width: 500px; padding:35px 60px;   border-radius: 20px; ">
+            <div class="footer" id="LINKS" style=" display: flex;
+        justify-content: space-between;
+        align-items: center;">
+                <div class="social1"
+                    style="font-size: larger; padding-top: 20px; display: flex;justify-content:space-between; width:500px;">
+                    <a href="https://www.freecodecamp.org/fcc5d50b6bd-17bb-4a00-8920-645ad9b5bc11" target="_blank"><i
+                            class="fab fa-free-code-camp" style="color: rgb(0, 0, 0);"></i></a>
+                    <a href="mailto:imdadullahchishti@gmail.com" target="_blank"><i style="color: rgb(0, 0, 0);"
+                            class="fas fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/imdadullah__7/" target="_blank"><i style="color: rgb(0, 0, 0);"
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/imdadullah-chishti-888340326/" target="_blank"><i
+                            style="color: rgb(0, 0, 0);" class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div style="font-size:large; margin-top:60px;">
+                &copy; 2024 Imdadullah. All Rights Reserved
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
